@@ -1,0 +1,16 @@
+.team {
+  &__list {
+    display: flex;
+  }
+  &__wrapper-item {
+    display: flex;
+  }
+  &__wrapper-link {
+    padding: 14px;
+  }
+  &__tittle {
+    justify-content: center;
+    font-size: 40px;
+    margin: 50px;
+  }
+}

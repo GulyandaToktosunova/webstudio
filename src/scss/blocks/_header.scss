@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  &__logo {
+    margin-right: 93px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000;
+    &:hover {
+      color: #2196f3;
+    }
+  }
+  &__logo-blue {
+    color: #2196f3;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__list-link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+  }
+  &__phone {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  &__numb {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  &__contacts {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    align-items: center;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  .current {
+    position: relative;
+  }
+  .current::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: $main-color;
+    bottom: -24px;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    color: $main-color;
+  }
+}
